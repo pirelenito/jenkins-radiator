@@ -1,23 +1,8 @@
-# jenkins dashboard
+# Jenkins radiator
 
-Get the AMD module located at `jenkins-radiator.js` and include it in your project.
+Simple Jenkins Build status radiator.
 
-Here is a sample integration:
-
-```js
-require.config({
-  paths: {
-    'react': 'vendor/bower_components/react/react',
-    'JenkinsDashboard': 'jenkins-radiator'
-  }
-});
-
-require(['react', 'JenkinsDashboard'], function(React, JenkinsDashboard) {
-
-  React.render(React.createElement(JenkinsDashboard), document.getElementById('widget-container'));
-
-});
-```
+Very early in development.
 
 ## Development
 
