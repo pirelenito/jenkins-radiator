@@ -1,0 +1,11 @@
+<html>
+<head>
+  <title>jenkins dashboard Demo</title>
+</head>
+<body>
+  <div id="main"></div>
+  {% for (var chunk in o.htmlWebpackPlugin.assets) { %}
+    <script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>
+  {% } %}
+</body>
+</html>

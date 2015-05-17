@@ -1,5 +1,6 @@
 /* jshint node: true */
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -7,15 +8,13 @@ module.exports = {
   entry: './lib/index.js',
 
   output: {
-    path: path.join(__dirname),
-    filename: 'jenkins-dashboard.js',
-    libraryTarget: 'umd',
-    library: 'JenkinsDashboard'
+    path: 'dist',
+    filename: '[name]-[hash].js'
   },
 
-  externals: {
-   'react': 'var React'
-  },
+  plugins: [new HtmlWebpackPlugin({
+    template: 'lib/index.html'
+  })],
 
   module: {
     loaders: [
