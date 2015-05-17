@@ -1,11 +1,9 @@
-var React = require("react");
+import React from 'react';
+import './jenkins-dashboard.scss';
 
 
-require("./jenkins-dashboard.scss");
-
-
-module.exports = React.createClass({
+export default React.createClass({
   render: function() {
-    return <div className="jenkins-dashboard"></div>;
+    return <div className="jenkins-dashboard">Yay</div>;
   }
 });
