@@ -1,5 +1,5 @@
 import React from 'react';
-import './jenkins-dashboard.scss';
+import './jenkins-radiator.scss';
 import jenkins from './jenkins';
 import classNames from 'classnames';
 

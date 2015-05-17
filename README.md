@@ -1,6 +1,6 @@
 # jenkins dashboard
 
-Get the AMD module located at `jenkins-dashboard.js` and include it in your project.
+Get the AMD module located at `jenkins-radiator.js` and include it in your project.
 
 Here is a sample integration:
 
@@ -8,7 +8,7 @@ Here is a sample integration:
 require.config({
   paths: {
     'react': 'vendor/bower_components/react/react',
-    'JenkinsDashboard': 'jenkins-dashboard'
+    'JenkinsDashboard': 'jenkins-radiator'
   }
 });
 

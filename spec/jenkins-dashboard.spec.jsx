@@ -1,5 +1,5 @@
 import React from 'react/addons';
-import JenkinsDashboard from '../lib/jenkins-dashboard.jsx';
+import JenkinsDashboard from '../lib/jenkins-radiator.jsx';
 
 describe('JenkinsDashboard', function() {
   var component;
