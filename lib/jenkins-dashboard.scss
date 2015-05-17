@@ -1,2 +1,51 @@
-.jenkins-dashboard {
+@import '~normalize.scss/normalize';
+
+
+html, body {
+  height: 100%;
+}
+
+
+.job-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+
+.job {
+  box-sizing: border-box;
+  color: white;
+  background: #7f8c8d;
+  margin: 2px;
+  list-style-type: none;
+  padding: 16px;
+  text-align: center;
+
+  flex-basis: 200px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  flex-grow: 1;
+
+  &.blue {
+    background: #16a085;
+  }
+
+  &.red {
+    background: #d35400;
+  }
 }
